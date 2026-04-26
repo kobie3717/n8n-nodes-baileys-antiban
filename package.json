@@ -1,0 +1,54 @@
+{
+  "name": "n8n-nodes-baileys-antiban",
+  "version": "0.1.0",
+  "description": "n8n community nodes for baileys-antiban WhatsApp bot anti-ban middleware",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run copy:icons",
+    "copy:icons": "mkdir -p dist/nodes/BaileysAntiban dist/nodes/BaileysAntibanTrigger && cp nodes/BaileysAntiban/baileys.svg dist/nodes/BaileysAntiban/ && cp nodes/BaileysAntibanTrigger/baileys.svg dist/nodes/BaileysAntibanTrigger/",
+    "dev": "tsc --watch",
+    "lint": "echo 'Skipping lint for v0.1'",
+    "format": "echo 'Skipping format for v0.1'"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "baileys",
+    "whatsapp",
+    "anti-ban",
+    "whatsapp-bot",
+    "automation",
+    "no-code"
+  ],
+  "author": "Kobus Wentzel <kobie@pop.co.za>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kobie3717/n8n-nodes-baileys-antiban"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/BaileysAntibanApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/BaileysAntiban/BaileysAntiban.node.js",
+      "dist/nodes/BaileysAntibanTrigger/BaileysAntibanTrigger.node.js"
+    ]
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "baileys-antiban": "^3.5.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^5.0.0"
+  }
+}
