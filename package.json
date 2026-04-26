@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.9",
-    "baileys-antiban": "^3.5.0",
+    "baileys-antiban": "^3.6.0",
     "n8n-workflow": "^1.0.0"
   },
   "devDependencies": {
