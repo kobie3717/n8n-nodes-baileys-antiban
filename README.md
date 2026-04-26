@@ -1,5 +1,10 @@
 # n8n-nodes-baileys-antiban
 
+[![npm version](https://img.shields.io/npm/v/n8n-nodes-baileys-antiban.svg)](https://www.npmjs.com/package/n8n-nodes-baileys-antiban)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![n8n community node](https://img.shields.io/badge/n8n-community%20node-FF6D5A?logo=n8n)](https://docs.n8n.io/integrations/community-nodes/)
+[![Powered by baileys-antiban](https://img.shields.io/badge/powered%20by-baileys--antiban-25D366)](https://github.com/kobie3717/baileys-antiban)
+
 n8n community nodes for [baileys-antiban](https://github.com/kobie3717/baileys-antiban) — WhatsApp bot anti-ban middleware with rate limiting, warmup, and session health monitoring.
 
 ## Installation
